@@ -1,0 +1,20 @@
+<template>
+  <HelloWorld  :initValue="1024" />
+  <!-- <HelloWorld :initValue="512" /> -->
+  <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+  <router-view />
+</template>
+
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+  }
+}
+</script>
