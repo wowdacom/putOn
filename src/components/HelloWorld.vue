@@ -6,7 +6,6 @@
   <div v-if="error">failed to load</div>
   <div v-if="!data">loading...</div>
   <div v-else>hello {{ data.hi }}</div>
-  <van-button class="my-btn" type="danger">危險按鈕</van-button>
 </template>
 
 <script lang="ts">

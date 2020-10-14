@@ -1,11 +1,17 @@
 <template>
-  <HelloWorld  :initValue="1024" />
+  <!-- <HelloWorld  :initValue="1024" /> -->
   <!-- <HelloWorld :initValue="512" /> -->
-  <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="header">
+    <div id="nav">
+      <router-link to="/">Add Books</router-link> |
+      <router-link to="/memo">Memo</router-link>
     </div>
-  <router-view />
+  </div>
+  <router-view></router-view>
+    <!-- <div slot="for-memo">
+      <h1>Here might be a page title</h1>
+    </div> -->
+  
 </template>
 
 <script>
@@ -18,3 +24,14 @@ export default {
   }
 }
 </script>
+<style>
+#app {
+  
+}
+.header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
